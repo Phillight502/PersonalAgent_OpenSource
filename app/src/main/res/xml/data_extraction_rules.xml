@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   数据提取规则（Android 12 / API 31+）：云备份与换机迁移均排除
+   存放 API Key 的 SharedPreferences，避免密钥随备份/换机外泄。
+   详见 https://developer.android.com/about/versions/12/backup-restore#xml-changes
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="personal_agent_prefs.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="personal_agent_prefs.xml" />
+    </device-transfer>
+</data-extraction-rules>

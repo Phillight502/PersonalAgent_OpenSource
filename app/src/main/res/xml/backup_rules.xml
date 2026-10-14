@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   全量云备份规则（API 30 及以下，API 31+ 优先使用 data_extraction_rules.xml）。
+   排除存放 API Key 的 SharedPreferences，避免随系统云备份外泄。
+   详见 https://developer.android.com/guide/topics/data/autobackup
+-->
+<full-backup-content>
+    <exclude domain="sharedpref" path="personal_agent_prefs.xml" />
+</full-backup-content>

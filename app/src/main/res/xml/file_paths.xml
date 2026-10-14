@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- FileProvider 可共享的路径：拍照临时图片存放在应用缓存目录 images/ 下 -->
+<paths>
+    <cache-path
+        name="camera_images"
+        path="images/" />
+    <!-- 导出的 JSON 备份临时放在缓存目录 exports/ 下，通过系统分享面板发出 -->
+    <cache-path
+        name="exports"
+        path="exports/" />
+</paths>

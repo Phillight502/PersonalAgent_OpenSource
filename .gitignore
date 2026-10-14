@@ -1,0 +1,28 @@
+*.iml
+.gradle
+.kotlin/
+/local.properties
+/.idea/
+.DS_Store
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# 正式签名密钥与密码，严禁入库
+keystore.properties
+*.jks
+*.keystore
+
+# 本地 release 构建产物（正式 APK 不入库，通过 GitHub Releases 分发）
+/app/release
+
+# AI 工具的本地工作目录、规划文档与个人编辑器配置，不属于开源源码
+/.trae/
+/.trae-html-share-packages/
+/.vscode/
+
+# 旧私有仓库的历史归档（开源初始化前的原始 .git 备份）
+/.git-old/
